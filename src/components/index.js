@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Navbar from './Navbar';
 import Home from './Home';
 
+
 export
 {
     AboutUs,
@@ -12,5 +13,5 @@ export
     Footer,
     Menu,
     Navbar,
-    Home
+    Home,
 };
