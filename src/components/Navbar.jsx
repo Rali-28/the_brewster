@@ -3,7 +3,10 @@ import { NavLogo } from '.'
 import { navLinks } from '../constants'
 import { layout } from '../style'
 
-
+/* REDO EVERYTHING 
+  SAVE IT FIRST
+  CONVERT INTO THREE ITEMS ON THE NAVBAR
+*/
 
 const Navbar = () => (
   
@@ -12,7 +15,7 @@ const Navbar = () => (
   
     {/* Render Desktop navLinks */}
     <div className='flex justify-start w-[1/3]'>
-      <ul className='flex-1 hidden pt-4 list-none items-left sm:flex'>
+      <ul className='hidden pt-4 list-none items-left sm:flex'>
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
@@ -29,12 +32,12 @@ const Navbar = () => (
     </div>
 
     {/* Middle Logo */}
-    <div className='justify-center w-[1/3]'>
+    <div className='flex justify-center w-[1/3]'>
       <NavLogo />
     </div>
     {/* End Logo */}
 
-    <div />
+    
 
     {/* Location GMap */}
     <div className='justify-end hidden pt-4 sm:flex place-items-center w-[1/3]'>
