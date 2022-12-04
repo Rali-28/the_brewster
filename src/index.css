@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face{
+  font-family: Coffee;
+  src: url("./assets/font/CoffeeLatte.ttf") format('truetype');
+}

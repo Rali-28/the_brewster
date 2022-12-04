@@ -12,6 +12,9 @@ module.exports = {
         secondary: "#87a922",
       }
     },
+    fontFamily: {
+      coffee: "Coffee",
+    }
   },
   plugins: [],
 }
