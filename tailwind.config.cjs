@@ -12,6 +12,8 @@ module.exports = {
       }
     },
     fontFamily: {
+      primary: "playfair_reg",
+      primary_italic: "playfair_italic",
       coffee: "Coffee",
       menu: "cof_menu",
     }
