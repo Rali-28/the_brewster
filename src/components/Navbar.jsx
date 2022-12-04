@@ -1,11 +1,12 @@
 import React from 'react'
 import { navLinks } from '../constants'
 import { map } from '../assets'
+import styles from '../style'
 
 const Navbar = () => (
   
   /* Navbar Container */
-  <nav className='items-center justify-between w-full py-6 clex'>
+  <nav className='flex items-center justify-between w-full py-6'>
     
     {/* Render Desktop navLinks */}
     <div>
@@ -23,29 +24,38 @@ const Navbar = () => (
           </li>
         ))}
       </ul>
+    </div>
 
-      {/* Mobile view Navbar */}
-      <div>
+    {/* Mobile view Navbar */}
+    <div>
         
-      </div>
-      {/* End Mobile View */}
+    </div>
+    {/* End Mobile View */}
 
-      {/* Middle Logo */}
+    {/* Middle Logo */}
+    <div>
+      
+    </div>
+    {/* End Logo */}
+
+    {/* Location GMap */}
+    <div className='flex flex-row pt-4 place-items-center'>
+
       <div>
-
+        <a src='#' className='items-center justify-end cursor-pointer sm:flex'>
+        <img src={map} alt='map'  className='h-[26px] w-[26px] flex-col'/>
+        </a>
       </div>
-      {/* End Logo */}
-
-      {/* Location GMap */}
+      
       <div>
-          <a>
-            
-          </a>
+        <p className={`items-center justify-end cursor-pointer sm:flex ${styles.paragraph} hover:text-black leading-[.9]`}>
+          The Brewster <br />
+          Location
+        </p>
       </div>
-      {/* End Map */}
 
     </div>
-    {/* End Desktop navLinks */}
+    {/* End Map */}
 
   </nav>
   /* End Navbar */
