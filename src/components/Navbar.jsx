@@ -10,7 +10,7 @@ const Navbar = () => (
     
     {/* Render Desktop navLinks */}
     <div>
-      <ul className='items-center justify-start flex-1 pt-4 list-none sm:flex'>
+      <ul className='items-center justify-start flex-1 hidden pt-4 list-none sm:flex'>
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
@@ -39,7 +39,7 @@ const Navbar = () => (
     {/* End Logo */}
 
     {/* Location GMap */}
-    <div className='flex flex-row pt-4 place-items-center'>
+    <div className='flex-row hidden pt-4 sm:flex place-items-center'>
 
       <div>
         <a src='#' className='items-center justify-end cursor-pointer sm:flex'>
@@ -48,8 +48,8 @@ const Navbar = () => (
       </div>
       
       <div>
-        <p className={`items-center justify-end cursor-pointer sm:flex ${styles.paragraph} hover:text-black leading-[.9]`}>
-          The Brewster <br />
+        <p className={`items-center justify-end cursor-pointer sm:flex hidden ${styles.paragraph} hover:text-black leading-[.9]`}>
+          The Brewster's <br />
           Location
         </p>
       </div>
