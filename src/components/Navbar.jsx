@@ -1,6 +1,8 @@
 import React from 'react'
 import { navLinks } from '../constants'
-import styles, { layout } from '../style'
+import { layout } from '../style'
+import { logo_sm } from '../assets'
+
 
 const Navbar = () => (
   
@@ -8,8 +10,8 @@ const Navbar = () => (
   <nav className='flex items-center justify-between w-full py-6'>
     
     {/* Render Desktop navLinks */}
-    <div>
-      <ul className='items-center justify-start flex-1 hidden pt-4 list-none sm:flex'>
+    <div className='flex justify-start w-[1/3]'>
+      <ul className='flex-1 hidden pt-4 list-none items-left sm:flex'>
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
@@ -25,11 +27,11 @@ const Navbar = () => (
       </ul>
     </div>
 
-    {/* Mobile view Navbar */}
-    <div>
-        
+    {/* Middle Logo */}
+    <div className='sm:flex hidden justify-center w-[1/3]'>
+      
     </div>
-    {/* End Mobile View */}
+    {/* End Logo */}
 
     {/* Middle Logo */}
     <div>
@@ -38,10 +40,10 @@ const Navbar = () => (
     {/* End Logo */}
 
     {/* Location GMap */}
-    <div className='flex-row hidden pt-4 sm:flex place-items-center'>
+    <div className='justify-end hidden pt-4 sm:flex place-items-center w-[1/3]'>
 
       <div>
-        <a src='#' className={`items-center justify-end cursor-pointer sm:flex ${layout.map_text}`}>
+        <a src='#' className={`items-center items cursor-pointer sm:flex ${layout.map_text}`}>
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className='fill-none w-[26px] h-[26px] stroke-[1.5] stroke-black mr-2'>
 
@@ -53,9 +55,6 @@ const Navbar = () => (
             Location
         </a>
       </div>
-      
-      
-
     </div>
     {/* End Map */}
 
