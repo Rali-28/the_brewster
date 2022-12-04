@@ -16,7 +16,7 @@ const Navbar = () => (
           key={nav.id}
           className={`font-primary_md
           tracking-widest
-          text-[16px]
+          text-[18px]
           ${index === navLinks.length -1 ? 'mr-0' : 'mr-10'}`}>
             <a href={`#${nav.id}`}>
               {nav.title}
