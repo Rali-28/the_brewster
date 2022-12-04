@@ -12,6 +12,11 @@
   src: url("./assets/font/PlayfairDisplay-Italic.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: playfair_md;
+  src: url('./assets/font/PlayfairDisplay-Medium.ttf') format('truetype');
+}
+
 @font-face{
   font-family: Coffee;
   src: url("./assets/font/CoffeeLatte.ttf") format('truetype');
