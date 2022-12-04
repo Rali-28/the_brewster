@@ -1,7 +1,6 @@
 import React from 'react'
 import { navLinks } from '../constants'
-import { map } from '../assets'
-import styles from '../style'
+import styles, { layout } from '../style'
 
 const Navbar = () => (
   
@@ -42,17 +41,20 @@ const Navbar = () => (
     <div className='flex-row hidden pt-4 sm:flex place-items-center'>
 
       <div>
-        <a src='#' className='items-center justify-end cursor-pointer sm:flex'>
-        <img src={map} alt='map'  className='h-[26px] w-[26px] flex-col'/>
+        <a src='#' className={`items-center justify-end cursor-pointer sm:flex ${layout.map_text}`}>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className='fill-none w-[26px] h-[26px] stroke-[1.5] stroke-black mr-2'>
+
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+          
+            The Brewster's <br />
+            Location
         </a>
       </div>
       
-      <div>
-        <p className={`items-center justify-end cursor-pointer sm:flex hidden ${styles.paragraph} hover:text-black leading-[.9]`}>
-          The Brewster's <br />
-          Location
-        </p>
-      </div>
+      
 
     </div>
     {/* End Map */}
