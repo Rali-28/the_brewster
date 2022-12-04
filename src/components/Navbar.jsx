@@ -1,5 +1,6 @@
 import React from 'react'
 import { navLinks } from '../constants'
+import { map } from '../assets'
 
 const Navbar = () => (
   
@@ -37,7 +38,9 @@ const Navbar = () => (
 
       {/* Location GMap */}
       <div>
-          
+          <a>
+            
+          </a>
       </div>
       {/* End Map */}
 
