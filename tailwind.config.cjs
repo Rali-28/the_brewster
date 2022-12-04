@@ -13,6 +13,7 @@ module.exports = {
     },
     fontFamily: {
       coffee: "Coffee",
+      menu: "cof_menu",
     }
   },
   plugins: [],
