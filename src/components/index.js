@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Menu from './Menu';
 import Navbar from './Navbar';
 import Home from './Home';
-
+import NavLogo from './NavLogo';
 
 export
 {
@@ -14,4 +14,5 @@ export
     Menu,
     Navbar,
     Home,
+    NavLogo,
 };

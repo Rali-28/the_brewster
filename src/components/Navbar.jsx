@@ -1,14 +1,15 @@
 import React from 'react'
+import { NavLogo } from '.'
 import { navLinks } from '../constants'
 import { layout } from '../style'
-import { logo_sm } from '../assets'
+
 
 
 const Navbar = () => (
   
   /* Navbar Container */
   <nav className='flex items-center justify-between w-full py-6'>
-    
+  
     {/* Render Desktop navLinks */}
     <div className='flex justify-start w-[1/3]'>
       <ul className='flex-1 hidden pt-4 list-none items-left sm:flex'>
@@ -18,7 +19,7 @@ const Navbar = () => (
           className={`font-primary_md
           tracking-widest
           text-[18px]
-          ${index === navLinks.length -1 ? 'mr-0' : 'mr-10'}`}>
+          ${index === navLinks.length -1 ? 'mr-0' : 'mr-5'}`}>
             <a href={`#${nav.id}`}>
               {nav.title}
             </a>
@@ -28,16 +29,12 @@ const Navbar = () => (
     </div>
 
     {/* Middle Logo */}
-    <div className='sm:flex hidden justify-center w-[1/3]'>
-      
+    <div className='justify-center w-[1/3]'>
+      <NavLogo />
     </div>
     {/* End Logo */}
 
-    {/* Middle Logo */}
-    <div>
-      
-    </div>
-    {/* End Logo */}
+    <div />
 
     {/* Location GMap */}
     <div className='justify-end hidden pt-4 sm:flex place-items-center w-[1/3]'>
