@@ -17,6 +17,14 @@ module.exports = {
       primary_italic: "playfair_italic",
       coffee: "Coffee",
       menu: "cof_menu",
+    },
+    screens: {
+      ss: '480px',
+      xs: '620px',
+      sm: '768px',
+      md: '1060px',
+      lg: '1200px',
+      xl: '1700px',
     }
   },
   plugins: [],
