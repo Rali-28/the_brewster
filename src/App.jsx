@@ -4,7 +4,7 @@ import { AboutUs, Contacts, Footer, Landing, Menu, Navbar } from './components'
 const App = () => (
 
   /* Main Div Container */
-  <div className='bg-primary'>
+  <div className='bg-primary font-coffee'>
     
     {/* Navbar */}
     <div>
