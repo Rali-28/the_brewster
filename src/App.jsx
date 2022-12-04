@@ -5,7 +5,7 @@ import styles from './style'
 const App = () => (
 
   /* Main Div Container */
-  <div className='w-full overflow-hidden bg-primary'>
+  <div className='w-full overflow-hidden'>
     
     {/* Navbar */}
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
@@ -15,14 +15,14 @@ const App = () => (
     </div>
 
     {/* Home Page */} {/* BG and  */}
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Home />
       </div>
     </div>
 
     {/* Content */}
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+    <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div>
         <AboutUs />
         <Menu />
