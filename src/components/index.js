@@ -3,7 +3,7 @@ import Contacts from './Contacts';
 import Footer from './Footer';
 import Menu from './Menu';
 import Navbar from './Navbar';
-import Landing from './Landing';
+import Home from './Home';
 
 export
 {
@@ -12,5 +12,5 @@ export
     Footer,
     Menu,
     Navbar,
-    Landing
+    Home
 };

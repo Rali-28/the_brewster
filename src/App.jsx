@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutUs, Contacts, Footer, Landing, Menu, Navbar } from './components'
+import { AboutUs, Contacts, Footer, Menu, Navbar } from './components'
 
 const App = () => (
 
@@ -13,12 +13,7 @@ const App = () => (
       </div>
     </div>
 
-    {/* Landing Page */}
-    <div>
-      <div>
-        <Landing />
-      </div>
-    </div>
+    
 
     {/* Content */}
     <div>
