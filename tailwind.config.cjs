@@ -8,15 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#D9AAB9",
+        primary: "#7D5C3B",
         dimBlack: "rgba(0, 0, 0, 0.6)",
+        dimWHite: "rgba(255, 255, 255, 0.6)",
       }
     },
     fontFamily: {
       primary: "playfair_reg",
       primary_italic: "playfair_italic",
       primary_md: "playfair_md",
-      coffee: "Coffee",
       menu: "cof_menu",
     },
     screens: {

@@ -17,11 +17,6 @@
   src: url('./assets/font/PlayfairDisplay-Medium.ttf') format('truetype');
 }
 
-@font-face{
-  font-family: Coffee;
-  src: url("./assets/font/CoffeeLatte.ttf") format('truetype');
-}
-
 @font-face {
   font-family: cof_menu;
   src: url("./assets/font/FrederickatheGreat-Regular.ttf") format('truetype');

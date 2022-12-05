@@ -26,7 +26,7 @@ export const layout =
     sectionImgReverse: `flex-1 flex ${styles.flexCenter} md:ml-10 ml-0 md:mt-0 mt-10 relative`,
 
     sectionInfo: `flex 1 ${styles.flexStart} flex-col`,
-    map_text: `${styles.paragraph} hover:text-black leading-[.9]`,
+    map_text: `font-primary font-normal text-[18px] leading-[30.8px] text-white leading-[.9]`,
 };
 
 export default styles;
