@@ -25,19 +25,19 @@ export const menu =
         title: 'Iced/Hot Coffee',
         product: [
             {
-                name: 'Espresso',
+                id: 'Espresso',
             },
             {
-                name: 'Americano',
+                id: 'Americano',
             },
             {
-                name: 'Cafe Latte',
+                id: 'Cafe Latte',
             },
             {
-                name: 'Cappuccino',
+                id: 'Cappuccino',
             },
             {
-                name: 'Machiatto',
+                id: 'Machiatto',
             },
         ],
     },
@@ -45,19 +45,19 @@ export const menu =
         title: 'Iced/Hot Non-Coffee',
         product: [
             {
-                name: 'Chocolate',
+                id: 'Chocolate',
             },
             {
-                name: 'Matcha Latte',
+                id: 'Matcha Latte',
             },
             {
-                name: 'Peach Mango',
+                id: 'Peach Mango',
             },
             {
-                name: '',
+                id: '',
             },
             {
-                name: 'Water',
+                id: 'Water',
             },
         ],
     },
@@ -65,16 +65,16 @@ export const menu =
         title: 'Pastries',
         product: [
             {
-                name: 'Brownies',
+                id: 'Brownies',
             },
             {
-                name: 'Caramel Bar',
+                id: 'Caramel Bar',
             },
             {
-                name: 'Blueberry Cheesecake',
+                id: 'Blueberry Cheesecake',
             },
             {
-                name: 'Calamansi Cheesecake',
+                id: 'Calamansi Cheesecake',
             },
         ],
     },
