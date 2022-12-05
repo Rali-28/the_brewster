@@ -79,3 +79,7 @@ export const menu =
         ],
     },
 ];
+
+export const aboutUs = [
+    
+]

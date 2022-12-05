@@ -15,6 +15,16 @@ const styles =
 
     marginX: 'md:mx-16 mx-6',
     marginY: 'md:my-16 my-6',
+
+    main: 'flex items-center justify-center min-h-screen',
+    layout: 'grid grid-cols-1 gap-5 md:grid-cols-2 lg-grid-cols-1',
+    section: 'relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30',
+    img_container: 'h-96 w-72',
+    img: 'object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125',
+    gradient: 'absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-primary group-hover:from-primary/70 group-hover:via-primary/60 group-hover:to-primary/70',
+    txt_container: 'absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0',
+    txt_h1: 'text-3xl text-white font-primary_md',
+    txt_p: 'mb-3 text-white transition-opacity duration-300 opacity-0 font-primary_italic group-hover:opacity-100',
 };
 
 export const layout =
