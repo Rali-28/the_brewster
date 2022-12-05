@@ -17,7 +17,7 @@ const styles =
     marginY: 'md:my-16 my-6',
 
     main: 'flex items-center justify-center min-h-screen',
-    layout: 'grid grid-cols-1 gap-5 md:grid-cols-2 lg-grid-cols-1',
+    layout: 'grid grid-cols-1 gap-5 md:grid-cols-3 lg-grid-cols-1',
     section: 'relative items-center justify-center overflow-hidden transition-shadow cursor-pointer group hover:shadow-xl hover:shadow-black/30',
     img_container: 'h-96 w-72',
     img: 'object-cover w-full h-full transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125',

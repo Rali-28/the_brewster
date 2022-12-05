@@ -1,4 +1,5 @@
 /* Static Texts for Rendering */
+import { mission, vision, values } from "../assets";
 
 export const navLinks = [
     {
@@ -81,5 +82,22 @@ export const menu =
 ];
 
 export const aboutUs = [
-    
+    {
+        id: 'mission',
+        title: 'Mission',
+        message: 'To Promote Coffee.         ',
+        img: mission,
+    },
+    {
+        id: 'vision',
+        title: 'Vision',
+        message: 'Everyone enjoying coffee.         ',
+        img: vision,
+    },
+    {
+        id: 'values',
+        title: 'Values',
+        message: 'Uphold coffee.',
+        img: values,
+    },
 ]

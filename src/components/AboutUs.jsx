@@ -1,5 +1,4 @@
 import React from 'react'
-import { mission, vision, values } from '../assets'
 import styles from '../style'
 import { aboutUs } from '../constants'
 
@@ -8,18 +7,19 @@ const AboutUs = () => (
 
     {/* Main */}
     <div className={`${styles.main}`}>
-
+      
       {/* Layout */}
         <div className={`${styles.layout}`}>
-          
-          {/* Section */}
-          <div className={`${styles.section}`}>
+        {aboutUs.map((About) => (
 
+          /*  Section */
+          <div key={About.key} className={`${styles.section}`}>
+          <h1 className='text-center font-primary_md text-[25px]'>{About.title}</h1>
             {/* Image Container */}
             <div className={`${styles.img_container}`}>
 
               {/* Image */}
-              <img src={mission} alt="mission" className={`${styles.img}`} />
+              <img src={About.img} alt={About.id} className={`${styles.img}`} />
 
             </div>
 
@@ -28,15 +28,18 @@ const AboutUs = () => (
             {/* Texts Container */}
             <div className={`${styles.txt_container}`}>
 
-              {/* TExts */}
-              <h1 className={`${styles.txt_h1}`}>Mission</h1>
+              {/* Texts */}
+              <h1 className={`${styles.txt_h1}`}>{About.title}</h1>
 
-              <p className={`${styles.txt_p}`}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quos libero dolores consectetur excepturi, distinctio molestias? Consequuntur, maiores quisquam nesciunt dicta, nam fuga necessitatibus debitis quo blanditiis eum, harum eos.</p>
+              <p className={`${styles.txt_p}`}>{About.message}</p>
 
             </div>
               
           </div>
-          {/* End Section */}
+          /* End Section */
+        ))}
+
+          
 
         </div>
       {/* End Layout */}
