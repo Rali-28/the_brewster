@@ -15,8 +15,8 @@ const App = () => (
     </div>
 
     {/* Home Page */} {/* BG and  */}
-    <div className={`${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+    <div className={` ${styles.flexStart}`}>
+      <div className={`bg-[url('./assets/home_bg.jpg')] ${styles.boxWidth}`}>
         <Home />
       </div>
     </div>

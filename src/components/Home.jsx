@@ -1,9 +1,11 @@
 import React from 'react'
+import { logo } from '../assets'
+import styles from '../style'
 
-const Home = () => {
-  return (
-    <div>Home</div>
-  )
-}
+const Home = () => (
+  <section id='home'>
+    img
+  </section>  
+)
 
 export default Home
