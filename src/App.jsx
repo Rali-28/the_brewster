@@ -26,14 +26,14 @@ const App = () => (
       <div>
         <Menu className='py-3' />
         <AboutUs />
-        <Contacts />
       </div>
     </div>
 
     {/* Footer */}
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Footer />
+         <Contacts />
+          <Footer />
       </div>
     </div>
 
