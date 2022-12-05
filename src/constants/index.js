@@ -101,3 +101,16 @@ export const aboutUs = [
         img: values,
     },
 ]
+
+export const contacts = [
+    {
+        id: 'location',
+        title: 'Location',
+        txt: 'Brgy Kanluran, Santa Rosa Laguna',
+    },
+    {
+        id: 'working',
+        title: 'Working Hours',
+        hour: 'Tuesday-Sunday: 1:00pm to 12:00am'
+    },
+]

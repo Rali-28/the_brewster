@@ -30,7 +30,7 @@ const App = () => (
     </div>
 
     {/* Footer */}
-    <div className={`${styles.flexCenter}`}>
+    <div className={`${styles.flexCenter} bg-primary`}>
       <div className={`${styles.boxWidth}`}>
          <Contacts />
           <Footer />
