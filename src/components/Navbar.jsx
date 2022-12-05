@@ -11,11 +11,9 @@ import { layout } from '../style'
 const Navbar = () => (
  
   /* Navbar Container */
-  <nav className='grid items-center grid-cols-3 gap-5'>
+  <nav className='grid items-center grid-cols-3 gap-5 '>
 
       {/* Desktop View Navlinks */}
-
-        {/* Render Links */}
         <div className='flex items-center justify-start'>
           <ul className='items-center hidden text-center list-none items-left md:flex'>
             {navLinks.map((nav, index) => (
@@ -32,21 +30,24 @@ const Navbar = () => (
             ))}
           </ul>
         </div>
-        {/* End Render */}
-
 
       {/* End Desktop View */}
 
+      {/* Mobile View Nav */}
+      <div className='order-first col-span-1 md:hidden'> 
+        <div>
+                
+        </div>
+      </div>
+      {/* End Mobile View */}
+
       {/* Center Logo */}
-      <div className='content-center'>
-        <a href="#">
+      <div className='content-center '>
           <div className='flex justify-center py-2'>
             <NavLogo />
           </div>
-        </a>
       </div >
       {/* End Center */}
-
 
       {/* Location Button */}
       <div className='justify-end hidden md:flex'>
