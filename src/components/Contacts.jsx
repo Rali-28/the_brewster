@@ -44,8 +44,11 @@ const Contacts = () => (
     <hr />
 
     {/* Footer Section */}
-    <footer className='pt-10'>
-      <img src={logo} alt="logo" />
+    <footer className='flex justify-center py-10'>
+      <div className='border rounded-[20px] bg-white'>
+        <img src={logo} alt="logo"/>
+      </div>
+      
     </footer>
     {/* End Footer */}
 

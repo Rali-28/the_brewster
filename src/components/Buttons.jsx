@@ -5,7 +5,7 @@ import { HiOutlineLocationMarker } from 'react-icons/hi'
 const Buttons = () => (
 
     /* Container */
-    <div className='grid grid-cols-2 gap-3 md:grid-cols-4'>
+    <div className='grid grid-cols-2 gap-0 md:gap-3 md:grid-cols-4'>
 
         {/* Facebook Button */}
         <a href="#">
