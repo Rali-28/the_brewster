@@ -24,7 +24,7 @@ const App = () => (
     {/* Content */}
     <div className={`${styles.paddingX} ${styles.flexStart}`}>
       <div>
-        <Menu />
+        <Menu className='py-3' />
         <AboutUs />
         <Contacts />
       </div>
