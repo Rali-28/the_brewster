@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutUs, Contacts, Footer, Home, Menu, Navbar } from './components'
+import { AboutUs, Contacts, Home, Menu, Navbar } from './components'
 import styles from './style'
 
 const App = () => (
@@ -14,7 +14,7 @@ const App = () => (
       </div>
     </div>
 
-    {/* Home Page */} {/* BG and  */}
+    {/* Home Page */}
     <div className={` ${styles.flexStart}`}>
       <div className={`bg-[url('./assets/home_bg.jpg')] ${styles.boxWidth}`}>
         <Home />
@@ -30,10 +30,9 @@ const App = () => (
     </div>
 
     {/* Footer */}
-    <div className={`${styles.flexCenter} bg-primary`}>
+    <div className={`${styles.flexCenter} bg-primary mt-10 pt-2`}>
       <div className={`${styles.boxWidth}`}>
          <Contacts />
-          <Footer />
       </div>
     </div>
 

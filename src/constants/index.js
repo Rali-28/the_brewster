@@ -111,6 +111,6 @@ export const contacts = [
     {
         id: 'working',
         title: 'Working Hours',
-        hour: 'Tuesday-Sunday: 1:00pm to 12:00am'
+        txt: 'Tuesday-Sunday: 1:00pm to 12:00am'
     },
 ]
