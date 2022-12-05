@@ -5,7 +5,7 @@ import styles from './style'
 const App = () => (
 
   /* Main Div Container */
-  <div className='w-full overflow-hidden'>
+  <div className='flex flex-col w-full min-h-screen overflow-hidden scroll-smooth'>
     
     {/* Navbar */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>

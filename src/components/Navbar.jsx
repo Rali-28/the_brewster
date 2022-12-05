@@ -1,17 +1,17 @@
 import React from 'react'
+import { useState } from 'react'
 import { NavLogo } from '.'
 import { navLinks } from '../constants'
 import { layout } from '../style'
+import { burger, close } from '../assets'
 
-/* 
 
-NOTE!!!!
-PUT MOBILE VIEW FOR THE WEBSITE
+const Navbar = () => {
 
-*/
+  /* Burger Toggle for Mobile View */
+  const [toggle, setToggle] = useState(false);
 
-const Navbar = () => (
- 
+  return (
   /* Navbar Container */
   <nav className='grid items-center grid-cols-3 gap-5 '>
 
@@ -35,18 +35,36 @@ const Navbar = () => (
         </div>
 
       {/* End Desktop View */}
-
-      {/* 
-        
-        PUT MOBILE VIEW!
       
-      */}
       {/* Mobile View Nav */}
       <div className='order-first col-span-1 md:hidden'> 
+
+        {/* Mobile Menu Toggle Button */}
         <div>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-          </svg>
+          <img src={toggle ? close : burger}
+          onClick={() => setToggle((prev => !prev))} 
+          alt="menu" 
+          className='w-[40px]'/>
+
+            {/* Render  */}
+            <div className={`${toggle ? 'flex' : 'hidden'} bg-[#89A25B] sidebar absolute p-2 rounded-md justify-center`}>
+              <ul>
+                {navLinks.map((nav, index) => (
+                  <li
+                    key={nav.id}
+                    className={`font-primary_md
+                    tracking-widest
+                    text-[18px]
+                   text-white
+                    ${index === navLinks.length -1 ? 'mr-0' : 'mr-5'}`}>
+
+                    <a href={`#${nav.id}`}>
+                      {nav.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+          </div>
         </div>
       </div>
       {/* End Mobile View */}
@@ -79,8 +97,7 @@ const Navbar = () => (
 
   </nav>
   /* End Nav */
+  )
 
-)
-
-
+}
 export default Navbar

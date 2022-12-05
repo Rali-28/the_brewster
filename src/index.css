@@ -22,3 +22,33 @@
   src: url("./assets/font/FrederickatheGreat-Regular.ttf") format('truetype');
 }
 
+/* Mobile View Sidebar */
+.sidebar
+{
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translatex(100px);
+    transform: translatex(100px);
+  }
+  100% {
+    -webkit-transform: translatex(0);
+    transform: translatex(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translatex(100px);
+    transform: translatex(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+
