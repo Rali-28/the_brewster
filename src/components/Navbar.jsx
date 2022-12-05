@@ -3,9 +3,11 @@ import { NavLogo } from '.'
 import { navLinks } from '../constants'
 import { layout } from '../style'
 
-/* REDO EVERYTHING 
-  SAVE IT FIRST
-  CONVERT INTO THREE ITEMS ON THE NAVBAR
+/* 
+
+NOTE!!!!
+PUT MOBILE VIEW FOR THE WEBSITE
+
 */
 
 const Navbar = () => (
@@ -33,13 +35,17 @@ const Navbar = () => (
 
       {/* End Desktop View */}
 
+      {/* 
+        
+        PUT MOBILE VIEW!
+      
+      */}
       {/* Mobile View Nav */}
       <div className='order-first col-span-1 md:hidden'> 
         <div>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-</svg>
-
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+          </svg>
         </div>
       </div>
       {/* End Mobile View */}
