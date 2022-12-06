@@ -80,7 +80,7 @@ const Navbar = () => {
       {/* Location Button */}
       <div className='justify-end hidden md:flex'>
           <div>
-            <a src='home' className={`items-center items cursor-pointer sm:flex ${layout.map_text}`}>
+            <a href="https://www.google.com/maps/place/Priscila's+Beanery+Cafe/@14.2901248,121.1138048,13z/data=!4m5!3m4!1s0x3397d9758e13940b:0xca7963d697278205!8m2!3d14.3135815!4d121.1111091" className={`items-center items cursor-pointer sm:flex ${layout.map_text}`}>
 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className='fill-none w-[26px] h-[26px] stroke-[1.5] stroke-black mr-2 stroke-white'>
 
@@ -100,4 +100,4 @@ const Navbar = () => {
   )
 
 }
-export default Navbar``
+export default Navbar
